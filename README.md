@@ -1,2 +1,2 @@
 # Portfolio Website
-A portfolio website created in React using Styled Components, and hosted on Github Pages.
+A student portfolio website created in [React](https://reactjs.org/) using [Styled Components](https://styled-components.com/), and hosted on [Github Pages](https://pages.github.com/).
