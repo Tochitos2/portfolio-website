@@ -1,22 +1,12 @@
 import React from 'react';
-import NavBar from '../NavBar';
-import Projects from '../Projects';
-import About from '../About';
-import CV from '../CV';
-import Contact from '../Contact';
 import styled, { css } from 'styled-components';
 
 class Container extends React.Component {
     render() {
         return (
             <StyledContainer>
-                <NavBar />
-                <Projects />
-                <About />
-                <CV />
-                <Contact />
-            </StyledContainer>
-            
+                {this.props.children}
+            </StyledContainer>        
         );
     } 
 
@@ -25,6 +15,7 @@ class Container extends React.Component {
         document.body.style.margin = 0;
     }
 }
+
 
 const StyledContainer = styled.div`
     // Background image is handled in a psuedo-element to ensure the filter  
