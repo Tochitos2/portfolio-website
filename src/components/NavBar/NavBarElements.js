@@ -17,6 +17,10 @@ export const Container = styled.div`
     border-bottom: 1px solid ${ props => props.theme.borderColour };
     background-color: ${ props => props.theme.primary };
     opacity: 70%;
+
+    @media (max-width: 750px) {
+        grid-template-columns: 0 0 0 auto 0 0 0;
+    }
     `;
 
 export const Button = styled.a`
@@ -48,6 +52,10 @@ export const Button = styled.a`
         width: 70%;
     }
 
+    @media (max-width: 750px) {
+        display: none;
+    }
+
 `;
 
 export const TitleWrapper = styled.div`
@@ -56,6 +64,10 @@ export const TitleWrapper = styled.div`
     font-family: ${ fontFamily };
     font-weight: ${ fontWeight };
     margin: 0.5rem 4rem 0.5rem 4rem;
+
+    @media (max-width: 850px) {
+        margin: 0.5rem 1rem;
+    }
     `;
 
 export const Title = styled.h1`
@@ -64,6 +76,10 @@ export const Title = styled.h1`
     font-weight: ${ fontWeight };
     margin: 0;
     font-size: 3rem;
+
+    @media (max-width: 350px) {
+        font-size: 2rem;
+    }
     `;
 
 export const Subtitle = styled.p`
@@ -73,5 +89,9 @@ export const Subtitle = styled.p`
     margin: 0;
     text-transform: none;
     font-style: italic;
-    font-size: 18;
+    font-size: 1.1rem;
+
+    @media (max-width: 350px) {
+        font-size: 0.7rem;
+    }
     `;
