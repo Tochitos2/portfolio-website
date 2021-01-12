@@ -1,19 +1,27 @@
+/* eslint-disable no-useless-constructor */
 import React from 'react';
 import { Container, Button, TitleWrapper, Title, Subtitle } from './NavBarElements';
 
-const NavBar = () => {
-    return (
-        <Container>
-            <Button link="#projects">Projects</Button>
-            <Button link="#about">About</Button>
-            <TitleWrapper>
-                <Title>Tom Angus</Title>
-                <Subtitle>Comp-Sci Student</Subtitle>
-            </TitleWrapper>
-            <Button link="#cv">CV</Button>
-            <Button link="#contact">Contact</Button>
-        </Container>
-    );
-};
+class NavBar extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return (
+            <Container>
+                <Button link="#projects" span={[2,3]}>Projects</Button>
+                <Button link="#about"span={[3,4]}>About</Button>
+                <TitleWrapper span={[4,5]}>
+                    <Title>Tom Angus</Title>
+                    <Subtitle>Comp-Sci Student</Subtitle>
+                </TitleWrapper>
+                <Button link="#cv" span={[5,6]}>CV</Button>
+                <Button link="#contact" span={[6,7]}>Contact</Button>
+            </Container>
+        );
+    }
+    
+}
 
 export default NavBar;

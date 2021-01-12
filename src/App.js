@@ -10,7 +10,7 @@ let theme = {
   primary: '#FFF',
   secondary: '#000',
   textColour: '#000',
-  fontFamily: 'Raleway',
+  fontFamily: "'Raleway', sans-serif",
   fontWeight: '300',
   borderColour: '#AAA',
   darkMode: 0
