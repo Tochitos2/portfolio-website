@@ -1,5 +1,23 @@
-import styled, { css } from 'styled-components';
+import React from 'react';
+import {Project, SectionContainer} from './ProjectsElements';
 
-const Projects = styled.div``;
+class Projects extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return (
+            <SectionContainer>
+                <Project />
+                <Project />
+                <Project />
+                <Project />
+                <Project />
+                <Project />
+            </SectionContainer>
+        );
+    }
+}
 
 export default Projects;
