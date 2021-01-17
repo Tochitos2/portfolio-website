@@ -23,12 +23,13 @@ const StyledContainer = styled.div`
     :before {
         content: "";
         position: absolute;
+        z-index: -1;
         top: 0; left: 0;
         width: 100%; height: 100%;
         background-image: url('background.jpg');
         background-repeat: no-repeat;
         // Size the image to fit width to 100% and allow length to overflow.
-        background-size: 100% auto; 
+        background-size: cover;
 
         // Theme handling
         transition-duration: 0.5s;
