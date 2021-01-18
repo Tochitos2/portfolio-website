@@ -5,6 +5,7 @@ const fontWeight = props => props.theme.fontWeight;
 
 export const Container = styled.div`
     position: sticky;
+    position: -webkit-sticky;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr auto 1fr 1fr 2fr;
     width: 100%;
