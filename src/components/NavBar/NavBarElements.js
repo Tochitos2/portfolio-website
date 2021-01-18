@@ -7,9 +7,7 @@ export const Container = styled.div`
     position: sticky;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr auto 1fr 1fr 2fr;
-    width: 100vw;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
     align-items: center;
     text-transform: uppercase;
     font-family: ${ fontFamily };
