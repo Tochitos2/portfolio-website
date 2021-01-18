@@ -8,14 +8,14 @@ class Projects extends React.Component {
         this.state = { 
             // Array holding the details of each project to be displayed, used for automatic JSX generation.
             projects: [
-                { title: "First", description: "test", href: "", iconPath: "", altText: "", float: "left" },
-                { title: "Second", description: "test", href: "", iconPath: "", altText: "", float: "left" },
-                { title: "Third", description: "test", href: "", iconPath: "", altText: "", float: "left" },
-                { title: "Fourth", description: "test", href: "", iconPath: "", altText: "", float: "left" },
-                { title: "fifth", description: "test", href: "", iconPath: "", altText: "", float: "left" },
-                { title: "sixth", description: "test", href: "", iconPath: "", altText: "", float: "left" },
-                { title: "seventh", description: "test", href: "", iconPath: "", altText: "", float: "left" },
-                { title: "eighth", description: "test", href: "", iconPath: "", altText: "", float: "left" },
+                { title: "First", description: "test", href: "", iconPath: "code.svg", altText: "" },
+                { title: "Second", description: "test", href: "", iconPath: "code.svg", altText: "" },
+                { title: "Third", description: "test", href: "", iconPath: "code.svg", altText: "" },
+                { title: "Fourth", description: "test", href: "", iconPath: "code.svg", altText: "" },
+                { title: "fifth", description: "test", href: "", iconPath: "code.svg", altText: "" },
+                { title: "sixth", description: "test", href: "", iconPath: "code.svg", altText: "" },
+                { title: "seventh", description: "test", href: "", iconPath: "code.svg", altText: "" },
+                { title: "eighth", description: "test", href: "", iconPath: "code.svg", altText: "" },
             ]
         };    
     }
