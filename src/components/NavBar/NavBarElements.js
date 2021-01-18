@@ -42,7 +42,7 @@ export const Button = styled.a`
         padding-top: 0.3rem;
         border-bottom: 2px solid ${ props => props.theme.borderColour };
 
-        transition-duration: 0.15s;
+        transition-duration: 0.1s;
         transition-timing-function: ease-in-out;
     }
     :hover::after {
