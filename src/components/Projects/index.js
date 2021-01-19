@@ -50,7 +50,7 @@ class Projects extends React.Component {
     }
 
     componentWillUnmount() {
-        window.removeEventListener('resize', this.setAlignment);
+        window.removeEventListener('resize', this.setAlignment.bind(this));
     }
 
     /**
