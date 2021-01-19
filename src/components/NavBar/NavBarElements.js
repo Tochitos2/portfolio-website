@@ -6,6 +6,8 @@ const fontWeight = props => props.theme.fontWeight;
 export const Container = styled.div`
     position: sticky;
     position: -webkit-sticky;
+    top: 0;
+    z-index: 2;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr auto 1fr 1fr 2fr;
     width: 100%;
@@ -15,12 +17,12 @@ export const Container = styled.div`
     font-weight: ${ fontWeight };
     border-bottom: 1px solid ${ props => props.theme.borderColour };
     background-color: ${ props => props.theme.primary };
-    opacity: 70%;
+    opacity: 90%;
 
     @media (max-width: 750px) {
         grid-template-columns: 0 0 0 auto 0 0 0;
     }
-    `;
+`;
 
 export const Button = styled.a`
     color: ${props => props.theme.text};
