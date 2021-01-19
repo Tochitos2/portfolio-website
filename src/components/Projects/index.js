@@ -1,5 +1,6 @@
 import React from 'react';
-import Project, {SectionTitle, ProjectsContainer} from './ProjectsElements';
+import Project, {ProjectsContainer} from './ProjectsElements';
+import {SectionTitle} from '../Container';
 
 class Projects extends React.Component {
     constructor(props) {
@@ -9,12 +10,12 @@ class Projects extends React.Component {
             // Array holding the details of each project to be displayed, used for automatic JSX generation.
             projects: [
                 { title: "First", description: "test", href: "", iconPath: "code.svg", altText: "" },
-                { title: "Second", description: "test", href: "", iconPath: "code.svg", altText: "" },
-                { title: "Third", description: "test", href: "", iconPath: "code.svg", altText: "" },
-                { title: "Fourth", description: "test", href: "", iconPath: "code.svg", altText: "" },
-                { title: "fifth", description: "test", href: "", iconPath: "code.svg", altText: "" },
+                { title: "Second", description: "test", href: "", iconPath: "react.svg", altText: "" },
+                { title: "Third", description: "test", href: "", iconPath: "java.svg", altText: "" },
+                { title: "Fourth", description: "test", href: "", iconPath: "javascript.svg", altText: "" },
+                { title: "fifth", description: "test", href: "", iconPath: "c-sharp.svg", altText: "" },
                 { title: "sixth", description: "test", href: "", iconPath: "code.svg", altText: "" },
-                { title: "seventh", description: "test", href: "", iconPath: "code.svg", altText: "" },
+                { title: "seventh", description: "test", href: "", iconPath: "php.svg", altText: "" },
                 { title: "eighth", description: "test", href: "", iconPath: "code.svg", altText: "" },
             ]
         };    

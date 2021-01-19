@@ -18,8 +18,8 @@ class Container extends React.Component {
 
 
 const StyledContainer = styled.div`
-    // Background image is handled in a psuedo-element to ensure the filter  
-    // is only applied to the image and no other elements.
+    // Background image is handled in a psuedo-element to ensure the   
+    // filter is only applied to the image and no other elements.
     :before {
         content: "";
         position: absolute;
@@ -28,7 +28,6 @@ const StyledContainer = styled.div`
         width: 100%; height: 100%;
         background-image: url('background.jpg');
         background-repeat: no-repeat;
-        // Size the image to fit width to 100% and allow length to overflow.
         background-size: cover;
 
         // Theme handling
@@ -39,3 +38,39 @@ const StyledContainer = styled.div`
 `;
 
 export default Container;
+
+export const SectionTitle = styled.h2`
+text-align: center;
+font-family: ${ props => props.theme.fontFamily };
+font-weight: ${ props => props.theme.fontWeight };
+font-size: 2rem;
+margin-top: 3rem;
+
+// Psuedo-elements to create seperator lines to each side of section title.
+::before {
+    content: "";
+    display: inline-block;
+    margin-bottom: 0.4rem;
+    margin-right: 0.5rem;
+    height: 0;
+    width: 30%;
+    border-bottom: 2px solid ${props => props.theme.borderColour};
+
+    @media(max-width: 350px) {
+        width: 20%;
+    }
+}
+::after {
+    content: "";
+    display: inline-block;
+    margin-bottom: 0.4rem;
+    margin-left: 0.5rem;
+    height: 0;
+    width: 30%;
+    border-bottom: 2px solid ${props => props.theme.borderColour};
+
+    @media(max-width: 350px) {
+        width: 20%;
+    }
+}
+`;

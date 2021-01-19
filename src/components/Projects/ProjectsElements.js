@@ -66,46 +66,12 @@ const Icon = styled.img`
     display: block;
     align-self: center;
     grid-row: 1 / 3;
+    width: 20%; 
+    height: auto;
     grid-column: ${ props => props.float === "left" ? "2 / 3" : "1 / 2" };
     margin-${props => props.float}: auto;
     margin-${props => (props.float === "left") ? "right" : "left"}: 1rem;
     src: ${props => props.src};
-`;
-
-export const SectionTitle = styled.h2`
-    text-align: center;
-    font-family: ${ props => props.theme.fontFamily };
-    font-weight: ${ props => props.theme.fontWeight };
-    font-size: 2rem;
-    margin-top: 3rem;
-
-    // Psuedo-elements to create seperator lines to each side of section title.
-    ::before {
-        content: "";
-        display: inline-block;
-        margin-bottom: 0.4rem;
-        margin-right: 0.5rem;
-        height: 0;
-        width: 30%;
-        border-bottom: 2px solid ${props => props.theme.borderColour};
-
-        @media(max-width: 350px) {
-            width: 20%;
-        }
-    }
-    ::after {
-        content: "";
-        display: inline-block;
-        margin-bottom: 0.4rem;
-        margin-left: 0.5rem;
-        height: 0;
-        width: 30%;
-        border-bottom: 2px solid ${props => props.theme.borderColour};
-
-        @media(max-width: 350px) {
-            width: 20%;
-        }
-    }
 `;
 
 export const ProjectsContainer = styled.section`
