@@ -19,6 +19,8 @@ export const Container = styled.div`
     border-bottom: 1px solid ${ props => props.theme.borderColour };
     background-color: ${ props => props.theme.primary };
     opacity: 90%;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
 
     @media (max-width: 750px) {
         grid-template-columns: 0 0 0 auto 0 0 0;
