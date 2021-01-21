@@ -26,6 +26,8 @@ const ProjectCard = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     position: relative;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
     
     ::before {
         content: "";
@@ -81,8 +83,6 @@ export const ProjectsContainer = styled.section`
     flex-wrap: wrap;
     justify-content: center;
     color: ${ props => props.theme.textColour };
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
 
     @media (max-width: 500px) {
         margin: 2rem 5vw;
