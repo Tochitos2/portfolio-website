@@ -18,6 +18,7 @@ class Project extends React.Component {
 export default Project;
 
 const ProjectCard = styled.div`
+    cursor: pointer;
     flex: 0 0 min(30rem, 100%);
     margin: 0 1rem 2rem 1rem;
     border: 1px solid ${ props => props.theme.borderColour };
@@ -71,7 +72,7 @@ const Icon = styled.img`
     grid-column: ${ props => props.float === "left" ? "2 / 3" : "1 / 2" };
     margin-${props => props.float}: auto;
     margin-${props => (props.float === "left") ? "right" : "left"}: 1rem;
-    src: ${props => props.src};
+    filter: invert(${props => props.theme.backgroundInvert});
 `;
 
 export const ProjectsContainer = styled.section`
@@ -79,6 +80,9 @@ export const ProjectsContainer = styled.section`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    color: ${ props => props.theme.textColour };
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
 
     @media (max-width: 500px) {
         margin: 2rem 5vw;

@@ -15,6 +15,7 @@ export const Container = styled.div`
     text-transform: uppercase;
     font-family: ${ fontFamily };
     font-weight: ${ fontWeight };
+    color: ${ props => props.theme.textColour };
     border-bottom: 1px solid ${ props => props.theme.borderColour };
     background-color: ${ props => props.theme.primary };
     opacity: 90%;

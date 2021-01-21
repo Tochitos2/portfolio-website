@@ -33,7 +33,7 @@ const StyledContainer = styled.div`
         // Theme handling
         transition-duration: 0.5s;
         transition-timing-function: ease-in-out;
-        filter: invert(${ props => props.theme.darkMode });
+        filter: invert(${ props => props.theme.backgroundInvert });
     }   
 `;
 
@@ -43,6 +43,7 @@ export const SectionTitle = styled.h2`
 text-align: center;
 font-family: ${ props => props.theme.fontFamily };
 font-weight: ${ props => props.theme.fontWeight };
+color: ${ props => props.theme.textColour };
 font-size: 2rem;
 margin-top: 3rem;
 
