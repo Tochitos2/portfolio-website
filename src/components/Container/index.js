@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 class Container extends React.Component {
     render() {
         return (
-            <StyledContainer>
+            <StyledContainer id="container">
                 {this.props.children}
             </StyledContainer>        
         );
@@ -13,11 +13,30 @@ class Container extends React.Component {
     componentDidMount() {
         // Fix for body rendering with 8px margin.
         document.body.style.margin = 0;
+        this.setHeight();
+
+        window.addEventListener('resize', this.setHeight.bind(this));
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.setHeight);
+    }
+
+    // The container height was acting glitchy with 100% height / min-height failing so this is my jank fix.
+    setHeight() {
+        document.getElementById('container').style.height = document.getElementById('root').scrollHeight + 'px';
+        console.log(document.getElementById('root').scrollHeight);
     }
 }
 
-
 const StyledContainer = styled.div`
+    
+    height: ${document.getElementById('root').scrollHeight}px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+
     // Background image is handled in a psuedo-element to ensure the   
     // filter is only applied to the image and no other elements.
     :before {
@@ -25,10 +44,14 @@ const StyledContainer = styled.div`
         position: absolute;
         z-index: -1;
         top: 0; left: 0;
-        width: 100%; height: 100%;
+        right: 0;
+        bottom: 0;
         background-image: url('background.jpg');
-        background-repeat: no-repeat;
         background-size: cover;
+        background-repeat: none;
+        
+        min-height: 100%;
+        min-width: 100%;
 
         // Theme handling
         transition-duration: 0.5s;
