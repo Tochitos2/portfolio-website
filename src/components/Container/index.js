@@ -24,8 +24,8 @@ class Container extends React.Component {
 
     // The container height was acting glitchy with 100% height / min-height failing so this is my jank fix.
     setHeight() {
+        document.getElementById('container').style.height = 'auto';
         document.getElementById('container').style.height = document.getElementById('root').scrollHeight + 'px';
-        console.log(document.getElementById('root').scrollHeight);
     }
 }
 
