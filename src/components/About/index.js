@@ -11,7 +11,11 @@ export default class About extends React.Component{
 
                 <AboutContainer>
                 <StandOut>Hi! </StandOut>
-                <Paragraph>{ text }</Paragraph>
+                <Paragraph>{text[0]}</Paragraph>
+                <br/> <br/>
+                <Paragraph>{text[1]}</Paragraph>
+                <br/> <br/>
+                <Paragraph>{text[2]}</Paragraph>
                 </AboutContainer>
             </>
         );
@@ -41,4 +45,4 @@ const StandOut = styled(Paragraph)`
     padding-right: 1.5rem;
 `;
 
-const text = "I'm a second year Computer Science student with an interest in Cyber Security, Web Design, Reverse Engineering, Game Modding, and using Computer Science to advance our climate response and create a positive impact.";
+const text = ["I'm a second year Computer Science student with an interest in Cyber Security, Web Design, Reverse Engineering, Game Modding, and using Computer Science to advance our climate response and create a positive impact.", "In 2020 I was the vice president of the Kent University Cybersecurity Society, where I focused on providing educational sessions on security practices, threats, and responsible penetration testing.", "I'm currently looking a Year in Industry placement, so please check out some of my work above or my CV below!"];
