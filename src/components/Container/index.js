@@ -31,7 +31,6 @@ class Container extends React.Component {
 
 const StyledContainer = styled.div`
     
-    height: ${document.getElementById('root').scrollHeight}px;
     position: relative;
     margin: 0;
     padding: 0;
