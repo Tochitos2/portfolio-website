@@ -26,7 +26,7 @@ const ToggleContainer = styled.div`
     display:grid;
     place-items: center;
 
-    width: min(7rem, 17vw);
+    width: min(6rem, 15vw);
     height: 4rem;
     background-color: ${ props => props.theme.primary };
     border-top: 1.5px solid ${ props => props.theme.borderColour };
