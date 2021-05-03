@@ -20,7 +20,7 @@ export default CV;
 const CVContainer = styled.div`
     margin: 2rem 20vw;
     width: auto;
-    height: auto;
+    height: 70vh;
     display: grid;
     place-items: center;
 
@@ -33,4 +33,6 @@ const PDFPanel = styled.embed`
     align-self: center;
     margin-left: auto;
     margin-right: auto;
+    height: 100%;
+    width: 100%;   
 `;
