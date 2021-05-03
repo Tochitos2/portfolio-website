@@ -9,14 +9,12 @@ class Projects extends React.Component {
         this.state = { 
             // Array holding the details of each project to be displayed, used for automatic JSX generation.
             projects: [
-                { title: "First", description: "test", href: "", iconPath: "code.svg", altText: "" },
-                { title: "Second", description: "test", href: "", iconPath: "react.svg", altText: "" },
-                { title: "Third", description: "test", href: "", iconPath: "java.svg", altText: "" },
-                { title: "Fourth", description: "test", href: "", iconPath: "javascript.svg", altText: "" },
-                { title: "fifth", description: "test", href: "", iconPath: "c-sharp.svg", altText: "" },
-                { title: "sixth", description: "test", href: "", iconPath: "code.svg", altText: "" },
-                { title: "seventh", description: "test", href: "", iconPath: "php.svg", altText: "" },
-                { title: "eighth", description: "test", href: "", iconPath: "code.svg", altText: "" },
+                { title: "Portfolio Website", description: "This very site, coded in ReactJS.", href: "https://github.com/Tochitos2/portfolio-website", iconPath: "react.svg", altText: "React Javascript icon" },
+                { title: "Text Analyser", description: "A text analyser with additional tools for analysing literature, such as dialogue filtering and blacklists, written in Java.", href: "https://github.com/Tochitos2/TextAnalyser", iconPath: "java.svg", altText: "" },
+                { title: "Divine Gifts SV Mod", description: "A Stardew Valley game mod written in C#, using PathosChild's SMAPI modding API.", href: "https://github.com/Tochitos2/Stardew-Valley.Divine-Gifts-Mod", iconPath: "c-sharp.svg", altText: "" },
+                { title: "Student Webpanel", description: "A PHP login system that allows the viewing of student data fetched via MySQL.", href: "https://github.com/Tochitos2/CO323-Assignment2-PHP-MySQL", iconPath: "php.svg", altText: "" },
+                { title: "Jack Recursive Descent Parser", description: "A recursive descent parser for the Jack language, including a symbol table. Written in Java.", href: "https://github.com/Tochitos2/Jack-Recursive-Descent-Parser", iconPath: "java.svg", altText: "" },
+                { title: "Cipher Cracking Tools", description: "A selection of command-line tools for cracking ceasar and transposition ciphers, written in Haskell and Python.", href: "https://github.com/Tochitos2/ciphercracking", iconPath: "code.svg", altText: "" }
             ]
         };    
     }

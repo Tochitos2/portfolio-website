@@ -23,8 +23,8 @@ const ProjectCard = styled.div`
     margin: 0 1rem 2rem 1rem;
     border: 1px solid ${ props => props.theme.borderColour };
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
     position: relative;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
@@ -47,7 +47,7 @@ const Title = styled.h3`
     font-weight: ${ props => props.theme.fontWeight };
     font-size: 1.5rem;
     grid-row: 1 / 2;
-    grid-column: ${ props => props.float === "left" ? "1 / 2" : "2 / 3" };
+    grid-column: ${ props => props.float === "left" ? "1 / 4" : "2 / 5" };
     text-align: ${ props => props.float };
     margin-${props => props.float}: 1rem;
     margin-top: 1rem;
@@ -58,10 +58,10 @@ const Description = styled.p`
     font-family: ${ props => props.theme.fontFamily };
     font-weight: ${ props => props.theme.fontWeight };
     grid-row: 2 / 3;
-    grid-column: ${ props => props.float === "left" ? "1 / 2" : "2 / 3" };
+    grid-column: ${ props => props.float === "left" ? "1 / 4" : "2 / 5" };
     text-align: ${ props => props.float };
     margin-${props => props.float}: 1rem;   
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 `;
 
@@ -69,9 +69,9 @@ const Icon = styled.img`
     display: block;
     align-self: center;
     grid-row: 1 / 3;
-    width: 20%; 
-    height: auto;
-    grid-column: ${ props => props.float === "left" ? "2 / 3" : "1 / 2" };
+    width: auto; 
+    height: 50%;
+    grid-column: ${ props => props.float === "left" ? "4 / 5" : "1 / 2" };
     margin-${props => props.float}: auto;
     margin-${props => (props.float === "left") ? "right" : "left"}: 1rem;
     filter: invert(${props => props.theme.backgroundInvert});
