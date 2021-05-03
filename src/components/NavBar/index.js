@@ -10,8 +10,8 @@ class NavBar extends React.Component {
     render() {
         return (
             <Container>
-                <Button link="#projects" span={[2,3]}>Projects</Button>
-                <Button link="#about"span={[3,4]}>About</Button>
+                <Button link="#about"span={[2,3]}>About</Button>
+                <Button link="#projects" span={[3,4]}>Projects</Button>
                 <TitleWrapper span={[4,5]}>
                     <Title>Tom Angus</Title>
                     <Subtitle>Comp-Sci Student</Subtitle>

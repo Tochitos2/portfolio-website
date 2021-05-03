@@ -7,7 +7,8 @@ export default class About extends React.Component{
     render() {
         return(
             <>
-                <SectionTitle>About</SectionTitle>
+                {/* <SectionTitle>About</SectionTitle>  
+                Trying out no title for top section. */}
 
                 <AboutContainer>
                 <StandOut>Hi! </StandOut>
@@ -22,7 +23,7 @@ export default class About extends React.Component{
     }
 }
 const AboutContainer = styled.div`
-    margin: 2rem 20vw;
+    margin: 3rem 20vw 2rem 20vw;
 
     @media (max-width: 650px) {
         margin: 2rem 10vw;
@@ -45,4 +46,6 @@ const StandOut = styled(Paragraph)`
     padding-right: 1.5rem;
 `;
 
-const text = ["I'm a second year Computer Science student with an interest in Cyber Security, Web Design, Reverse Engineering, Game Modding, and using Computer Science to advance our climate response and create a positive impact.", "In 2020 I was the vice president of the Kent University Cybersecurity Society, where I focused on providing educational sessions on security practices, threats, and responsible penetration testing.", "I'm currently looking a Year in Industry placement, so please check out some of my work above or my CV below!"];
+const text = ["I'm a second year Computer Science student with an interest in Cyber Security, Web Design, Reverse Engineering, Game Modding, and using computer science to advance our climate change response and create a positive social impact.", 
+"In 2020 I was the vice president of the Kent University Cybersecurity Society, where I focused on providing educational hands-on sessions on security practices, threats, and responsible penetration testing.", 
+"I'm currently looking for a Year in Industry placement, so please check out some of my work and my CV below!"];
