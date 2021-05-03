@@ -22,6 +22,7 @@ const ProjectCard = styled.div`
     flex: 0 0 min(30rem, 100%);
     margin: 0 1rem 2rem 1rem;
     border: 1px solid ${ props => props.theme.borderColour };
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 1fr;
@@ -69,8 +70,8 @@ const Icon = styled.img`
     display: block;
     align-self: center;
     grid-row: 1 / 3;
-    width: auto; 
-    height: 50%;
+    width: 60%; 
+    height: auto;
     grid-column: ${ props => props.float === "left" ? "4 / 5" : "1 / 2" };
     margin-${props => props.float}: auto;
     margin-${props => (props.float === "left") ? "right" : "left"}: 1rem;
