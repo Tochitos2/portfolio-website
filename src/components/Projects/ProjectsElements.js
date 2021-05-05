@@ -79,7 +79,7 @@ const Icon = styled.img`
 `;
 
 export const ProjectsContainer = styled.section`
-    margin: 2rem 10vw;
+    margin: 2rem 10vw 8rem 10vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

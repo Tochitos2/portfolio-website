@@ -47,7 +47,7 @@ const StyledContainer = styled.div`
         bottom: 0;
         background-image: url('background.jpg');
         background-size: cover;
-        background-repeat: none;
+        background-repeat: repeat-y;
         
         min-height: 100%;
         min-width: 100%;
@@ -68,6 +68,8 @@ font-weight: ${ props => props.theme.fontWeight };
 color: ${ props => props.theme.textColour };
 font-size: 2rem;
 margin-top: 3rem;
+margin-bottom: 4rem;
+-webkit-margin-collapse: none;
 
 // Psuedo-elements to create seperator lines to each side of section title.
 ::before {

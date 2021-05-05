@@ -18,7 +18,7 @@ render() {
 export default CV;
 
 const CVContainer = styled.div`
-    margin: 2rem 20vw;
+    margin: 2rem 20vw 8rem 20vw;
     width: auto;
     height: 70vh;
     display: grid;

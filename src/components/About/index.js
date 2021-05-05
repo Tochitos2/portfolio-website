@@ -23,7 +23,7 @@ export default class About extends React.Component{
     }
 }
 const AboutContainer = styled.div`
-    margin: 3rem 20vw 2rem 20vw;
+    margin: 3rem 20vw 8rem 20vw;
 
     @media (max-width: 650px) {
         margin: 2rem 10vw;
@@ -36,6 +36,10 @@ const Paragraph = styled.p`
     font-size: 1.5rem;
     color: ${props => props.theme.textColour};
     display: inline;
+
+    @media (max-width: 650px) {
+        font-size: 1rem;
+    }
 `;
 
 const StandOut = styled(Paragraph)`
@@ -44,6 +48,11 @@ const StandOut = styled(Paragraph)`
     font-weight: normal;
     font-style: italic;
     padding-right: 1.5rem;
+
+    @media (max-width: 650px) {
+        font-size: 2.5rem;
+        padding-right: 1rem;
+    }
 `;
 
 const text = ["I'm a second year Computer Science student with an interest in Cyber Security, Web Design, Reverse Engineering, Game Modding, and using computer science to advance our climate change response and create a positive social impact.", 
