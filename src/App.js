@@ -48,8 +48,8 @@ function App() {
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <Container>
         <NavBar />
-        <About />
         <Projects />
+        <About />
         <CV />
         <Contact />
         <ThemeToggleButton OnClick={ toggleTheme } toggleIcon= { theme === 'light' ? lightTheme.toggleIcon : darkTheme.toggleIcon }/>
