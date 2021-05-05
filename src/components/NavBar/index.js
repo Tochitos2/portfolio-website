@@ -1,24 +1,35 @@
-/* eslint-disable no-useless-constructor */
 import React from 'react';
+import { animateScroll as scroll, Link } from 'react-scroll';
 import { Container, Button, TitleWrapper, Title, Subtitle } from './NavBarElements';
 
 class NavBar extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return (
-            <Container>
-                <Button link="#about"span={[2,3]}>About</Button>
-                <Button link="#projects" span={[3,4]}>Projects</Button>
-                <TitleWrapper span={[4,5]}>
-                    <Title>Tom Angus</Title>
-                    <Subtitle>Comp-Sci Student</Subtitle>
-                </TitleWrapper>
-                <Button link="#cv" span={[5,6]}>CV</Button>
-                <Button link="#contact" span={[6,7]}>Contact</Button>
-            </Container>
+            
+        <Container>                  
+            <Button span={[2,3]}>
+                <Link to="projects" smooth={true} duration={500} offset={-150}>Projects</Link>
+            </Button>
+            
+            <Button span={[3,4]}>
+                <Link to="about" smooth={true} duration={500} offset={-150}>About</Link>
+            </Button>
+
+            <TitleWrapper span={[4,5]} onClick={scroll.scrollToTop}>
+                <Title>Tom Angus</Title>
+                <Subtitle>Comp-Sci Student</Subtitle>
+            </TitleWrapper>
+
+            <Button  span={[5,6]}>
+                <Link to="cv" smooth={true} duration={500} offset={-150}>CV</Link>
+            </Button>
+
+            <Button span={[6,7]}>
+                <Link to="contact" smooth={true} duration={500} offset={-150}>Contact</Link>
+            </Button>
+        </Container>
+            
         );
     }
     

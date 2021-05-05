@@ -21,7 +21,7 @@ class Projects extends React.Component {
 
     render() {
         return (
-            <div>
+            <div id="projects">
                 <SectionTitle>Projects</SectionTitle>
 
                 <ProjectsContainer>

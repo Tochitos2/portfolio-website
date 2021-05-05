@@ -68,6 +68,7 @@ export const TitleWrapper = styled.div`
     font-family: ${ fontFamily };
     font-weight: ${ fontWeight };
     margin: 0.5rem 4rem 0.5rem 4rem;
+    cursor: pointer;
 
     @media (max-width: 850px) {
         margin: 0.5rem 1rem;

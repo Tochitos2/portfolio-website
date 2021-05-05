@@ -6,7 +6,7 @@ class CV extends React.Component {
 render() {
     return (
         <>
-            <SectionTitle>CV</SectionTitle>
+            <SectionTitle id="cv">CV</SectionTitle>
             <CVContainer>
                 <PDFPanel src='./CV.pdf' width='60vw' height='40vw' type='application/pdf'/>
             </CVContainer>
@@ -29,7 +29,7 @@ const CVContainer = styled.div`
     }
 `;
 
-const PDFPanel = styled.embed`
+const PDFPanel = styled.iframe`
     align-self: center;
     margin-left: auto;
     margin-right: auto;

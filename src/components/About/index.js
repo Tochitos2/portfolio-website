@@ -7,8 +7,8 @@ export default class About extends React.Component{
     render() {
         return(
             <>
-                {/* <SectionTitle>About</SectionTitle>  
-                Trying out no title for top section. */}
+                <SectionTitle id="about">About</SectionTitle>  
+
 
                 <AboutContainer>
                 <StandOut>Hi! </StandOut>
