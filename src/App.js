@@ -13,6 +13,7 @@ import ThemeToggleButton from './components/ThemeToggleButton';
 const lightTheme = {
   primary: '#FFF',
   secondary: '#000',
+  backgroundColour: "white",
   textColour: '#000',
   fontFamily: "'Raleway', sans-serif",
   fontWeight: '300',
@@ -24,6 +25,7 @@ const lightTheme = {
 const darkTheme = {
   primary: '#000',
   secondary: '#FFF',
+  backgroundColour: "black",
   textColour: '#FFF',
   fontFamily: "'Raleway', sans-serif",
   fontWeight: '300',

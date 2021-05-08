@@ -34,6 +34,7 @@ const StyledContainer = styled.div`
     position: relative;
     margin: 0;
     padding: 0;
+    background-color: ${props => props.theme.backgroundColour};
 
 
     // Background image is handled in a psuedo-element to ensure the   
