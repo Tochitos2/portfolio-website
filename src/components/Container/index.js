@@ -34,9 +34,6 @@ const StyledContainer = styled.div`
     position: relative;
     margin: 0;
     padding: 0;
-    background-color: ${props => props.theme.backgroundColour};
-    z-index: -1;
-
 
     // Background image is handled in a psuedo-element to ensure the   
     // filter is only applied to the image and no other elements.
