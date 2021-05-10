@@ -13,28 +13,18 @@ class Container extends React.Component {
     componentDidMount() {
         // Fix for body rendering with 8px margin.
         document.body.style.margin = 0;
-
-        // Hopefully this jank code is no longer neccessary.
-        // this.setHeight();
-        // window.addEventListener('resize', this.setHeight.bind(this));
     }
 
-    // componentWillUnmount() {
-    //     window.removeEventListener('resize', this.setHeight);
-    // }
 
-    // The container height was acting glitchy with 100% height / min-height failing so this is my jank fix.
-    // setHeight() {
-    //     document.getElementById('container').style.height = 'auto';
-    //     document.getElementById('container').style.height = document.getElementById('root').scrollHeight + 'px';
-    // }
 }
 
 const StyledContainer = styled.div`
     
     position: relative;
     margin: 0;
+    margin-bottom: 4.5rem;
     padding: 0;
+
 
     // Background image is handled in a psuedo-element to ensure the   
     // filter is only applied to the image and no other elements.
