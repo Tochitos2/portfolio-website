@@ -22,8 +22,7 @@ const StyledContainer = styled.div`
     
     position: relative;
     margin: 0;
-    margin-bottom: 4.5rem;
-    padding: 0;
+    padding-bottom: 4.5rem;
 
 
     // Background image is handled in a psuedo-element to ensure the   
