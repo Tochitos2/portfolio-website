@@ -13,20 +13,21 @@ class Container extends React.Component {
     componentDidMount() {
         // Fix for body rendering with 8px margin.
         document.body.style.margin = 0;
-        this.setHeight();
 
-        window.addEventListener('resize', this.setHeight.bind(this));
+        // Hopefully this jank code is no longer neccessary.
+        // this.setHeight();
+        // window.addEventListener('resize', this.setHeight.bind(this));
     }
 
-    componentWillUnmount() {
-        window.removeEventListener('resize', this.setHeight);
-    }
+    // componentWillUnmount() {
+    //     window.removeEventListener('resize', this.setHeight);
+    // }
 
     // The container height was acting glitchy with 100% height / min-height failing so this is my jank fix.
-    setHeight() {
-        document.getElementById('container').style.height = 'auto';
-        document.getElementById('container').style.height = document.getElementById('root').scrollHeight + 'px';
-    }
+    // setHeight() {
+    //     document.getElementById('container').style.height = 'auto';
+    //     document.getElementById('container').style.height = document.getElementById('root').scrollHeight + 'px';
+    // }
 }
 
 const StyledContainer = styled.div`
